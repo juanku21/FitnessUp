@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Up - Contacto</title>
+    <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div>
+                <a href="../index.html"><img src="../assets/img/Logos/logo-fitness-up.png" alt="Logo Fitness Up" class="logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">INICIO</a></li>
+                    <li><a href="./nosotros.html">NOSOTROS</a></li>
+                    <li><a href="./planes.html">PLANES</a></li>
+                    <li><a href="./blog.html">BLOG</a></li>
+                    <li><a href="./contacto.html">CONTACTO</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="título-contactos">
+                <h1>¿Todavía tenés dudas sobre nuestro servicio?<h1>
+                <h2>No hay problema, esribinos un email con tus inquietudes, nosotros te responderemos a la brevedad</h2>
+            </section>
+            <section class="formulario">
+                <form action="">
+                    <!-- El atributo queda vacio porque el formulario no está vinculado con una base de datos -->
+                    <fieldset>
+                        <!-- el "for" del label siempre debe coincidir con el "id" del input  --> 
+                        <div>
+                            <label for="name"></label>
+                            <input type="text" id="name" placeholder="Nombre" required class="espacios">
+                            <label for="lastname"></label>
+                            <input type="text" id="lastname" placeholder="Apellido" required class="espacios">
+                        </div>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" id="email" placeholder="E-mail" required class="espacios">
+                            <label for="phone"></label>
+                            <input type="text" id="phone" placeholder="Teléfono (opcional)" class="espacios">
+                        </div>
+                        <div>
+                            <label for="mensaje"></label>
+                            <textarea name="" id="mensaje" cols="80" rows="30" placeholder="Mensaje/Consulta" class="espacio-mensajes" required></textarea>
+                        </div>
+                        <label for="submit"></label>
+                        <input type="submit" id="submit" value="ENVIAR" class="boton-form">
+                    </fieldset>
+                </form>
+            </section>
+            <section class="whatsapp">
+                <h2>¿Necesitas contactarnos de manera urgente? <br> Comunicate ahora mismo con nuestro servicio de atención al cliente vía WhatsApp</h2>
+                <a href="https://web.whatsapp.com/" target="_blank"><img src="../assets/img/Logos/logo-whatsapp-fitness-up.png" alt="Logo de whatsapp" class="logo-whatsapp"></a> <!--Botón de whatsapp-->
+            </section>
+        </main>
+        <footer>
+            <section class="redes-sociales">
+                <div class="div-facebook">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="../assets/img/Logos/logo-facebook-fitness-up.png" alt="Perfil de facebook de Fitness Up" class="logo-facebook"></a>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com" target="_blank"><img src="../assets/img/Logos/logo-instagram-fitness-up.png" alt="Perfil de instagram de Fitness Up" class="medidas-img-redes"></a>
+                </div>
+                <div>
+                    <a href="https://www.twitter.com" target="_blank"><img src="../assets/img/Logos/logo-twitter-fitness-up.png" alt="Perfil de twitter de Fitness Up" class="medidas-img-redes"></a>
+                </div>
+            </section>
+            <div>
+                <p class="parrafo-copyr">Copyright 2023 Fitness Up. <br> Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </body>
+</html>
