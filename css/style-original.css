@@ -1,0 +1,1083 @@
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* importe de fuentes + Guía de usos */
+
+
+/* Comienzo estilos generales */
+
+*{
+    text-decoration: none;
+}
+
+.img-logo{
+    width: 400px;
+    height: 100px;
+    padding-left: 10%;
+}
+.nav-item-pr{
+    color: #38FC00;
+    font-weight: 600;
+}
+.nav-item-pr:hover{
+    color: white;
+}
+main{
+    background-color: #0c0c0c;
+}
+footer{
+    background-color: black;
+    padding: 20px;
+}
+.redes-sociales{
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+}
+.parrafo-copyr{
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+.div-facebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Comienzo estilos página n°1 */
+
+.banner{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    /* templete column y row sirven para asignar cantidad y tamaño a las columnas y filas */
+    /* función repeat(cantidad, tamaño) */
+}
+.banner h1{
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    text-shadow: 3px 3px 18px #38FC00;
+    grid-column: 2 / 5;
+    grid-row: 2;
+    /* grid column y row sirven para ubicar elementos en la cuadrícula*/
+    /* el primer número es el inicio y el segundo el final (usar el inspeccionar para mejores resultados) */
+}
+.posicion-carrusel{
+    order: -1;
+    grid-row: 1 / 4;
+    grid-column: 1 / 6;
+}
+.título-inicio{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.título-inicio h2{
+    font-weight: 700;
+    text-align: center;
+    color: #38FC00;
+    font-size: 40px;
+}
+.beneficios{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.article-entrenamiento{
+    background-color: black;
+    width: 90%;
+    height: 10%;
+    padding: 2%;
+    border-color: #38FC00;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.image-entrenamiento{
+    border-radius: 40px;
+}
+.subtítulo-entrenamiento{
+    color: rgb(0, 238, 255);
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-entrenamiento{
+    color: white;
+    font-size: 32px;
+}
+.article-nutricion{
+    background-color: black;
+    width: 90%;
+    height: 10%;
+    padding: 2%;
+    border-color: #38FC00;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+}
+.image-nutricion{
+    border-radius: 40px;
+}
+.subtítulo-nutricion{
+    color: #38FC00;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-nutricion{
+    color: white;
+    font-size: 32px;
+}
+.article-motivacion{
+    background-color: black;
+    width: 90%;
+    height: 10%;
+    padding: 2%;
+    border-color: #38FC00;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.image-motivacion{
+    border-radius: 40px;
+}
+.subtítulo-motivacion{
+    color:rgb(255, 196, 0);
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-motivacion{
+    color: white;
+    font-size: 32px;
+}
+
+.planes-inicio{
+    padding-top: 10px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.planes-inicio a input{
+    height: 60px;
+    width: 150px;
+    background-color: #38FC00;
+    border-color: #38FC00;
+    border-radius: 22px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.planes-inicio a input:hover{
+    color: #38FC00;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Comienzo estilos página n°3 */
+
+.título-planes{
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.título-planes h1{
+    color: white;
+    font-size: 350%;
+    text-align: center;
+}
+.diferentes-planes{
+    padding: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 120px;
+}
+.diferentes-planes article{
+    width: 19rem;
+    height: 39.5rem;
+    background-color: #c7c7c7;
+    border-style: solid;
+    border-width: medium;
+    border-color: #38FC00;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+.subtítulo-plan{
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-size: 22px;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion-plan{
+    width: 295px;
+    height: 8.4rem;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    padding: 4% 1% 0% 1%;
+    border-bottom: medium solid #38FC00;
+    grid-row: 2 / 3;
+    grid-column: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenido-plan{
+    padding: 3%;
+    padding-bottom: 10%;
+    height: 17rem;
+    border-bottom: medium solid #38FC00;
+    grid-row: 3 / 6;
+    grid-column: 1 / 1;
+}
+.contenido-plan p{
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+.contenido-plan ul{
+    color: black;
+    list-style: none;
+    font-size: 20px;
+}
+.precio-plan{
+    padding-top: 4%;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-row: 6 / 8;
+    grid-column: 1 / 1;
+}
+.precio-plan p{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+}
+.precio-plan input{
+    width: 140px;
+    height: 40px;
+    margin: 4%;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #38FC00;
+    border: solid medium #38FC00;
+    border-radius: 15px;
+}
+.precio-plan input:hover{
+    color: #38FC00;
+    background-color: black;
+    cursor: pointer;
+}
+.dudas-contacto{
+    text-align: center;
+    padding: 3%;
+    padding-bottom: 5%;
+}
+.dudas-contacto h3{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 1%;
+}
+.dudas-contacto a{
+    font-size: 30px;
+    font-weight: 600;
+    color: #38FC00;
+    text-decoration: none;
+}
+.dudas-contacto a:hover{
+    color: orange;
+}
+
+/* Comienzo estilos página n°5 */
+
+.título-contactos{
+    text-align: center;
+    font-size: 22px;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+.formulario{
+    padding-bottom: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.formulario form fieldset{
+    padding: 20px;
+    background-color: #c7c7c7;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.formulario form fieldset div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.espacios{
+    padding: 1.5%;
+    width: 450px;
+    height: 40px;
+}
+.espacio-mensajes{
+    padding: 1.5%;
+    width: 924px;
+    height: 150px;
+    resize: vertical;
+}
+.boton-form{
+    width: 140px;
+    height: 42px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: #38FC00;
+    border: solid medium #38FC00;
+}
+.boton-form:hover{
+    color: #38FC00;
+    background-color: black;
+    cursor: pointer;
+}
+.whatsapp{
+    font-size: 20px;
+    padding-right: 12%;
+    padding-left: 12%;
+    text-align: center;
+    padding-bottom: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Comienzo estilos página n°4 */
+
+.hero-blog{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, 1fr) 600px;
+}
+.main-blog{
+    grid-column: 1 / 7;
+    grid-row: 1 / 4;
+}
+.título-blog{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+.testimonios{
+    padding-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+.testimonios article{
+    padding: 3%;
+    background-color: #c7c7c7;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.parrafo-nombre{
+    font-size: 38px;
+    font-weight: 600;
+    padding-bottom: 3%;
+}
+.parrafo-testimonio{
+    font-size: 26px;
+}
+aside{
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+    background-image: url(../assets/img/background-aside.png);
+    padding: 2% 2% 2% 2%;
+}
+.img-mancuernas{
+    width: 286px;
+    height: 286px;
+}
+.publicidad{
+    border-color: #38FC00;
+}
+.publicidad:hover{
+    box-shadow: 3px 3px 18px #38FC00;
+}
+.boton-compra{
+    color: white;
+    background-color: black;
+    border-color: #38FC00;
+    font-weight: 500;
+}
+.boton-compra:hover{
+    color: #38FC00;
+    background-color: black;
+    border-color: #38FC00;
+}
+
+/* Comienzo estilos página n°2 */
+
+.descripcion-servicio{
+    color: white;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.descripcion-servicio h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-bottom: 1.5%;
+}
+.descripcion-servicio p{
+    font-size: 32px;
+    text-align: justify;
+}
+.equipo-trabajo h2{
+    color: #38FC00;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 2.5%;
+}
+.equipo-trabajo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.article-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.cards-profesionales{
+    width: 30%;
+    height: 40rem;
+    background-color: #c7c7c7;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.texto-articulo{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.parrafo-nombre-2{
+    padding-top: 3%;
+    padding-bottom: 3.5%;
+    font-size: 26px;
+    font-weight: 600;
+}
+.info-profesional{
+    font-size: 22px;
+    padding: 0% 5% 3% 5%;
+}
+.logros-empresa{
+    padding-top: 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logros-empresa h3{
+    text-align: center;
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 3.5%;
+}
+.contenedor-logros-horizontal{
+    padding-bottom: 6%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+.div-logros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-logros h4{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Comienzo diseños responsive */
+
+/* Tablet */
+
+@media (max-width: 768px){
+
+    /* Estilos generales */
+
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header nav ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0% 0% 0% 0%;
+    }
+    .img-logo{
+        width: 300px;
+        height: 75px;
+    }
+    .parrafo-copyr{
+        font-size: 14px;
+    }
+    .logo-facebook{
+        width: 36px;
+        height: 36px;
+    }
+    .medidas-img-redes{
+        width: 46px;
+        height: 46px;
+    }
+
+    /* Pagina N°1 */
+
+    .banner{
+        height: 255px;
+        grid-template-columns: repeat(7, 1fr);
+    }
+    .banner h1{
+        font-size: 50px;
+        grid-column: 2 / 7;
+    }
+    .posicion-carrusel{
+        grid-column: 1 / 8;
+    }
+    .article-entrenamiento{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-entrenamiento{
+        font-size: 30px;
+    }
+    .parrafo-entrenamiento{
+        font-size: 22px;
+    }
+    .article-nutricion{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-nutricion{
+        font-size: 30px;
+    }
+    .parrafo-nutricion{
+        font-size: 22px;
+    }
+    .article-motivacion{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-motivacion{
+        font-size: 30px;
+    }
+    .parrafo-motivacion{
+        font-size: 22px;
+    }
+    .planes-inicio{
+        padding-top: 8px;
+        padding-bottom: 40px;
+    }
+    .planes-inicio a input{
+        height: 50px;
+        width: 130px;
+        font-size: 16px;
+    }
+
+    /* Pagina N°2 */
+
+    .descripcion-servicio h1{
+        font-size: 40px;
+    }
+    .descripcion-servicio p{
+        font-size: 22px;
+    }
+    .equipo-trabajo h2{
+        font-size: 30px;
+    }
+    .article-cards{
+        width: 40%;
+        flex-direction: column;
+    }
+    .image-profesional{
+        width: 210px;
+        height: 210px;
+        margin-top: 10px;
+    }
+    .cards-profesionales{
+        width: 100%;
+        height: 30rem;
+    }
+    .texto-articulo{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .parrafo-nombre-2{
+        font-size: 20px;
+    }
+    .info-profesional{
+        font-size: 16px;
+    }
+    .logros-empresa h3{
+        font-size: 28px;
+    }
+    .contenedor-logros-horizontal{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .div-logros h4{
+        font-size: 20px;
+    }
+
+    /* Pagina N°3 */
+
+    .título-planes h1{
+        font-size: 300%;
+    }
+    .diferentes-planes{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .diferentes-planes article{
+        width: 50%;
+        height: 610px;
+        grid-template-rows: 70px 130px 272px 130px;
+    }
+    .subtítulo-plan{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        grid-row: 1 / 2;
+    }
+    .descripcion-plan{
+        width: 100%;
+        height: 100%;
+        padding-right: 3%;
+        padding-left: 3%;
+        grid-row: 2 / 3;
+    }
+    .precio-plan{
+        padding-top: 4%;
+        height: 100%;
+        grid-row: 4 / 5;
+    }
+    .precio-plan input{
+        width: 150px;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 18px;
+    }
+    .dudas-contacto h3{
+        font-size: 30px;
+    }
+    .dudas-contacto a{
+        font-size: 30px;
+    }
+
+    /* Pagina N°4 */
+
+    .hero-blog{
+        grid-template-rows: repeat(3, 1fr) 900px;
+    }
+    .título-blog{
+        font-size: 22px;
+    }
+    .testimonios article{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 62%;
+    }
+    .parrafo-nombre{
+        font-size: 30px;
+        text-align: center;
+    }
+    .parrafo-testimonio{
+        font-size: 20px;
+        padding-right: 3%;
+        padding-left: 2%;
+    }
+    aside{
+        height: 100%;
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        align-items: center;
+        justify-items: center;
+        gap: 0px;
+    }
+    .carrusel-tablet{
+        padding: 0% 0% 0% 0%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .publicidad{
+        justify-content: center;
+        align-items: center;
+        width: 85%;
+    }
+    .publicidad img{
+        height: 80px;
+        width: 80px;
+    }
+
+    /* Pagina N°5 */
+
+    .título-contactos{
+        font-size: 18px;
+        padding-top: 3%;
+        padding-left: 8%;
+        padding-right: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .formulario form fieldset{
+        gap: 3px;
+    }
+    .formulario form fieldset div{
+        flex-direction: column;
+        gap: 3px;
+    }
+    .espacios{
+        width: 530px;
+    }
+    .espacio-mensajes{
+        width: 530px;
+    }
+    .boton-form{
+        margin: 2% 0% 1% 0%;
+    }
+    .whatsapp{
+        font-size: 15px;
+        padding-bottom: 2.8%;
+        gap: 16px;
+    }
+    .logo-whatsapp{
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Mobile L */
+
+@media (max-width: 425px){
+
+    /* Estilos generales */
+
+    header nav ul li{
+        font-size: 14px;
+    }
+    .img-logo{
+        width: 200px;
+        height: 50px;
+    }
+    .logo-facebook{
+        width: 32px;
+        height: 32px;
+    }
+    .medidas-img-redes{
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Pagina N°1 */
+
+    .banner{
+        height: 150px;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .banner h1{
+        font-size: 22px;
+        padding-bottom: 30px;
+        grid-column: 2 / 10;
+        grid-column: 3 / 9;
+    }
+    .posicion-carrusel{
+        grid-column: 1 / 11;
+    }
+    .título-inicio{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+    .título-inicio h2{
+        font-size: 30px;
+    }
+    .image-entrenamiento{
+        width: 250px;
+        height: 250px;
+    }
+    .subtítulo-entrenamiento{
+        font-size: 26px;
+    }
+    .parrafo-entrenamiento{
+        font-size: 19px;
+    }
+    .image-nutricion{
+        width: 250px;
+        height: 250px;
+    }
+    .subtítulo-nutricion{
+        font-size: 26px;
+    }
+    .parrafo-nutricion{
+        font-size: 19px;
+    }
+    .subtítulo-motivacion{
+        font-size: 26px;
+    }
+    .parrafo-motivacion{
+        font-size: 19px;
+    }
+    .image-motivacion{
+        width: 250px;
+        height: 250px;
+    }
+
+    /* Pagina N°2 */
+
+    .descripcion-servicio h1{
+        font-size: 30px;
+        padding-bottom: 3%;
+    }
+    .descripcion-servicio p{
+        font-size: 18px;
+        padding-bottom: 3%;
+    }
+    .equipo-trabajo h2{
+        font-size: 24px;
+        padding-bottom: 5%;
+    }
+    .article-cards{
+        width: 60%;
+        flex-direction: column;
+    }
+    .cards-profesionales{
+        height: 27rem;
+        padding-top: 30px;
+    }
+    .image-profesional{
+        width: 200px;
+        height: 200px;
+    }
+    .parrafo-nombre-2{
+        font-size: 18px;
+    }
+    .info-profesional{
+        font-size: 16px;
+    }
+    .logros-empresa{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 6%;
+    }
+    .logros-empresa h3{
+        font-size: 26px;
+    }
+    .div-logros h4{
+        font-size: 18px;
+        text-align: center;
+    }
+    .logo-logro{
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* Pagina N°3 */
+
+    .título-planes h1{
+        font-size: 250%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    .diferentes-planes article{
+        width: 75%;
+    }
+    .subtítulo-plan{
+        padding-bottom: 0%;
+    }
+    .descripcion-plan{
+        font-size: 15.5px;
+        padding: 4% 4% 0% 4%;
+    }
+    .contenido-plan{
+        padding-top: 4%;
+    }
+    .precio-plan{
+        height: 100%;
+        padding-top: 2%;
+    }
+    .dudas-contacto{
+        padding-top: 5%;
+        padding-bottom: 8%;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+    .dudas-contacto h3{
+        font-size: 24px;
+    }
+    .dudas-contacto a{
+        font-size: 24px;
+    }
+
+    /* Pagina N°4 */
+
+    .hero-blog{
+        background-color: #0c0c0c;
+        gap: 15px;
+        grid-template-rows: repeat(3, 1fr) 970px;
+    }
+    .título-blog{
+        font-size: 18px;
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
+    .testimonios article{
+        width: 75%;
+        gap: 18px;
+    }
+    .testimonios article div img{
+        width: 280px;
+        height: 280px;
+    }
+    .parrafo-nombre{
+        font-size: 26px;
+    }
+    .parrafo-testimonio{
+        font-size: 18px;
+    }
+    .carrusel-tablet{
+        height: 100%;
+        gap: 20px !important;
+    }
+    .publicidad img{
+        grid-column: 1;
+        grid-row: 1 / 2;
+    }
+
+    /* Pagina N°5 */
+
+    .título-contactos{
+        font-size: 14px;
+    }
+    .espacios{
+        width: 300px;
+    }
+    .espacio-mensajes{
+        width: 300px;
+    }
+    .boton-form{
+        width: 100px;
+        height: 38px;
+        font-size: 20px;
+    }
+    .whatsapp{
+        font-size: 13px;
+        padding-bottom: 8%;
+    }
+    .logo-whatsapp{
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+/* Fin diseños sitio web */

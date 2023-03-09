@@ -1,0 +1,19 @@
+footer{
+    background-color: $bg-color-1;
+    padding: 20px;
+}
+.redes-sociales{
+    padding-bottom: 15px;
+    @include flex(row, center, center, 30px);
+}
+.parrafo-copyr{
+    color: $text-color;
+    text-align: center;
+    font-weight: 500;
+    font-size: 17px;
+}
+.div-facebook{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

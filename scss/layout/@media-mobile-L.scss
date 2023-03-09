@@ -1,0 +1,276 @@
+
+// Inicio estilos Mobile L
+
+@media (max-width: 425px){
+
+    /* Estilos generales */
+
+    header{
+        nav{
+            ul{
+                li{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .img-logo{
+        width: 200px;
+        height: 50px;
+    }
+    .logo-facebook{
+        width: 32px;
+        height: 32px;
+    }
+    .medidas-img-redes{
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Pagina N°1 */
+
+    .banner{
+        height: 150px;
+        @include grid(repeat(10, 1fr), repeat(5, 1fr));
+        h1{
+            font-size: 22px;
+            grid-column: 3 / 9;
+        }
+    }
+    .posicion-carrusel{
+        grid-column: 1 / 11;
+        grid-row: 1 / 6;
+    }
+    .título-inicio{
+        padding-left: 4%;
+        padding-right: 4%;
+        padding-bottom: 20px;
+        padding-top: 30px;
+        h2{
+            font-size: 30px;
+        }
+    }
+    .image-beneficio{
+        width: 250px;
+        height: 250px;
+        img{
+            padding-top: 10px;
+            width: 250px;
+            height: 250px;
+        }
+    }
+    .beneficios-contenido{
+        width: 270px;
+        height: 408px;
+    }
+    .subtítulo-entrenamiento{
+        font-size: 26px;
+    }
+    .parrafo-entrenamiento{
+        font-size: 19px;
+    }
+    .subtítulo-nutricion{
+        font-size: 26px;
+    }
+    .parrafo-nutricion{
+        font-size: 19px;
+    }
+    .subtítulo-motivacion{
+        font-size: 26px;
+    }
+    .parrafo-motivacion{
+        font-size: 19px;
+    }
+
+    /* Pagina N°2 */
+
+    .descripcion-servicio{
+        h1{
+            font-size: 30px;
+            padding-bottom: 3%;
+        }
+        p{
+            font-size: 17px;
+            padding-bottom: 3%;
+        }
+    }
+    .equipo-trabajo{
+        h2{
+            font-size: 24px;
+            padding-bottom: 5%;
+        }
+    }
+    .article-cards{
+        width: 60%;
+        flex-direction: column;
+    }
+    .cards-profesionales{
+        height: 25.5rem;
+        padding-top: 30px;
+    }
+    .image-profesional{
+        width: 200px;
+        height: 200px;
+    }
+    .parrafo-nombre-2{
+        font-size: 18px;
+    }
+    .info-profesional{
+        font-size: 16px;
+    }
+    .logros-empresa{
+        padding-top: 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 6%;
+        h3{
+            font-size: 26px;
+        }
+    }
+    .div-logros{
+        h4{
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    .logo-logro{
+        width: 70px;
+        height: 70px;
+    }
+    
+    /* Pagina N°3 */
+
+    .título-planes{
+        h1{
+            font-size: 210%;
+            padding-top: 3%;
+            padding-bottom: 3%;
+        }
+    }
+    .diferentes-planes{
+        article{
+            width: 75%;
+        }
+    }
+    .subtítulo-plan{
+        padding-bottom: 0%;
+    }
+    .descripcion-plan{
+        font-size: 15.5px;
+        padding: 4% 4% 0% 4%;
+    }
+    .contenido-plan{
+        padding-top: 4%;
+    }
+    .precio-plan{
+        height: 100%;
+        padding-top: 2%;
+        input{
+            width: 130px;
+            height: 40px;
+            font-size: 18px;
+            border-radius: 14px;
+        }
+    }
+
+    .dudas-contacto{
+        padding-top: 5%;
+        padding-bottom: 8%;
+        padding-left: 6%;
+        padding-right: 6%;
+        h3{
+            font-size: 24px;
+        }
+        a{
+            font-size: 24px;
+        }
+    }
+
+    /* Pagina N°4 */
+
+    .hero-blog{
+        background-color: $bg-color-2;
+        gap: 15px;
+        grid-template-rows: repeat(3, 1fr) 1030px;
+    }
+    .título-blog{
+        h1{
+            font-size: 25px;
+        }
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
+    .testimonios article{
+        width: 75%;
+        gap: 18px;
+    }
+    .testimonios article{
+        div{
+            img{
+                width: 280px;
+                height: 280px;
+            }
+        }
+    }
+    .parrafo-nombre{
+        font-size: 26px;
+    }
+    .parrafo-testimonio{
+        font-size: 18px;
+    }
+    .carrusel-tablet{
+        height: 100%;
+        gap: 20px !important;
+    }
+    .publicidad{
+        img{
+            grid-column: 1;
+            grid-row: 1 / 2;
+        }
+    }
+
+    /* Pagina N°5 */
+
+    .título-contactos{
+        h1{
+            font-size: 24px;
+            margin-bottom: 0px;
+        }
+        h2{
+            font-size: 22px;
+            padding-bottom: 20px;
+            margin-bottom: 0px;
+        }
+    }
+    .espacios{
+        width: 300px;
+        &::placeholder{
+            font-size: 14px;
+        }
+    }
+    .espacio-mensajes{
+        width: 300px;
+        &::placeholder{
+            font-size: 14px;
+        }
+    }
+    .boton-form{
+        width: 100px;
+        height: 38px;
+        font-size: 20px;
+    }
+    .whatsapp{
+        padding-bottom: 5%;
+        h3{
+            font-size: 18px;
+        }
+        a{
+            img{
+                width: 90px;
+                height: 90px;
+            }
+        }
+    }
+    
+}
+

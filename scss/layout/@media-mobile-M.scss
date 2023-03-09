@@ -1,0 +1,173 @@
+// Inicio estilos Mobile M
+
+@media (max-width: 375px){
+
+    /* Estilos generales */
+
+    .img-logo{
+        width: 180px;
+        height: 45px;
+    }
+    .logo-facebook{
+        width: 28px;
+        height: 28px;
+    }
+    .medidas-img-redes{
+        width: 34px;
+        height: 34px;
+    }
+    .parrafo-copyr{
+        font-size: 12px;
+    }
+
+    /* Pagina N°1 */
+
+    .banner{
+        height: 150px;
+        @include grid(repeat(10, 1fr), repeat(6, 1fr));
+        h1{
+            font-size: 22px;
+            grid-column: 3 / 9;
+        }
+    }
+    .posicion-carrusel{
+        grid-column: 1 / 11;
+        grid-row: 1 / 6;
+    }
+    .título-inicio{
+        padding-top: 4px;
+        padding-bottom: 10px;
+        h2{
+            font-size: 24px;
+        }
+    }
+    .beneficios-contenido{
+        height: 270px;
+    }
+    .article-entrenamiento{
+        width: 84%;
+    }
+    .parrafo-entrenamiento{
+        font-size: 15.5px;
+    }
+    .article-nutricion{
+        width: 84%;
+    }
+    .parrafo-nutricion{
+        font-size: 15.5px;
+    }
+    .article-motivacion{
+        width: 84%;
+    }
+    .parrafo-motivacion{
+        font-size: 15.5px;
+    }
+
+    /* Pagina N°2 */
+    
+    .descripcion-servicio{
+        h1{
+            font-size: 26px;
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    .article-cards{
+        width: 68%;
+    }
+    .logros-empresa{
+        h3{
+            font-size: 22px;
+        }
+    }
+    .div-logros{
+        h4{
+            font-size: 16px;
+        }
+    }
+
+    /* Pagina N°3 */
+
+    .título-planes{
+        h1{
+            font-size: 180%;
+        }
+    }
+    .diferentes-planes{
+        article{
+            height: 595px;
+            grid-template-rows: 70px 150px 235px 140px;
+        }
+    }
+    .dudas-contacto{
+        h3{
+            font-size: 20px;
+        }
+        a{
+            font-size: 20px;
+        }
+    }
+
+    /* Pagina N°4 */
+
+    .título-blog{
+        h1{
+            font-size: 20px;
+        }
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .testimonios{
+        article{
+            width: 76%;
+            div{
+                img{
+                    width: 230px;
+                    height: 230px;
+                }
+            }
+        }
+    }
+    .parrafo-nombre{
+        font-size: 22px;
+    }
+    .parrafo-testimonio{
+        font-size: 15px;
+    }
+
+    /* Pagina N°5 */
+
+    .título-contactos{
+        h1{
+            font-size: 20px;
+        }
+        h2{
+            font-size: 18px;
+        }
+    }
+    .espacios{
+        width: 270px;
+    }
+    .espacio-mensajes{
+        width: 270px;
+    }
+    .boton-form{
+        width: 90px;
+        height: 32px;
+        font-size: 18px;
+    }
+    .whatsapp{
+        padding-bottom: 5%;
+        h3{
+            font-size: 16.7px;
+        }
+        a{
+            img{
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+}

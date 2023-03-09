@@ -1,0 +1,146 @@
+main{
+    background-color: $bg-color-2;
+}
+
+.banner{
+    width: 100%;
+    height: 500px;
+    @include grid(repeat(5, 1fr), repeat(3, 1fr));
+    h1{
+        z-index: 1;
+        text-align: center;
+        color: $text-color;
+        font-size: 70px;
+        text-shadow: 3px 3px 18px $color-pr;
+        grid-column: 2 / 5;
+        grid-row: 2;
+    }
+}
+.posicion-carrusel{
+    grid-column: 1 / 6;
+    grid-row: 1 / 4;
+}
+.título-inicio{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 6%;
+    padding-left: 6%;
+    h2{
+        font-weight: 700;
+        text-align: center;
+        color: $color-pr;
+        font-size: 54px;
+    }
+}
+.beneficios{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include flex(column, center, center, 40px)
+}
+.article-entrenamiento{
+    background-color: $bg-color-1;
+    width: 85%;
+    height: 10%;
+    padding: 2%;
+    border-color: $color-pr;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.beneficios-contenido{
+    width: 650px;
+    height: 500px;
+}
+.image-beneficio{
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+    overflow: hidden;
+    img{
+        border-radius: 40px;
+        transition: transform 0.8s;
+        &:hover{
+            transform: scale(1.4);
+        }
+    }
+}
+.subtítulo-entrenamiento{
+    color: rgb(0, 238, 255);
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-entrenamiento{
+    color: $text-color;
+    font-size: 32px;
+}
+.article-nutricion{
+    background-color: $bg-color-1;
+    width: 85%;
+    height: 10%;
+    padding: 2%;
+    border-color: $color-pr;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 30px;
+}
+.subtítulo-nutricion{
+    color: $color-pr;
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-nutricion{
+    color: $text-color;
+    font-size: 32px;
+}
+.article-motivacion{
+    background-color: $bg-color-1;
+    width: 85%;
+    height: 10%;
+    padding: 2%;
+    border-color: $color-pr;
+    border-width: medium;
+    border-style: solid;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+.subtítulo-motivacion{
+    color:rgb(255, 196, 0);
+    font-size: 40px;
+    padding-bottom: 3%;
+}
+.parrafo-motivacion{
+    color: $text-color;
+    font-size: 32px;
+}
+.planes-inicio{
+    padding-top: 10px;
+    padding-bottom: 60px;
+    @include flex(row, center);
+    a{
+        input{
+            height: 60px;
+            width: 150px;
+            background-color: $color-pr;
+            border-color: $color-pr;
+            border-radius: 22px;
+            font-size: 20px;
+            font-weight: 600;
+            &:hover{
+                color: $color-pr;
+                background-color: $bg-color-1;
+                cursor: pointer;
+            }
+        }
+    }
+}

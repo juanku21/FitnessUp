@@ -1,0 +1,13 @@
+@mixin flex($dir, $jus:flex-start, $alt:flex-start, $gap:0px) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jus;
+    align-items: $alt;
+    gap: $gap;
+}
+
+@mixin grid($col, $row) {
+    display: grid;
+    grid-template-columns: $col;
+    grid-template-rows: $row;
+}

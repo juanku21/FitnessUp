@@ -1,0 +1,316 @@
+
+// Inicio estilos Tablet
+
+@media (max-width: 768px){
+
+    /* Estilos generales */
+
+    header{
+        @include flex(column, center, center);
+        nav{
+            ul{
+                padding: 0% 0% 0% 0%;
+                @include flex(column, center, center);
+            }
+        }
+    }
+    .img-logo{
+        width: 300px;
+        height: 75px;
+    }
+    .parrafo-copyr{
+        font-size: 14px;
+    }
+    .logo-facebook{
+        width: 36px;
+        height: 36px;
+    }
+    .medidas-img-redes{
+        width: 46px;
+        height: 46px;
+    }
+
+    /* Pagina N°1 */
+
+    .banner{
+        height: 255px;
+        grid-template-columns: repeat(7, 1fr);
+        h1{
+            font-size: 50px;
+            grid-column: 2 / 7;
+        }
+    }
+    .posicion-carrusel{
+        grid-column: 1 / 8;
+    }
+    .beneficios-contenido{
+        width: 495px;
+        height: 260px;
+    }
+    .image-beneficio{
+        width: 500px;
+        height: 500px;
+        img{
+            width: 500px;
+            height: 500px;
+        }
+    }
+    .article-entrenamiento{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-entrenamiento{
+        font-size: 30px;
+    }
+    .parrafo-entrenamiento{
+        font-size: 21px;
+    }
+    .article-nutricion{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-nutricion{
+        font-size: 30px;
+    }
+    .parrafo-nutricion{
+        font-size: 21px;
+    }
+    .article-motivacion{
+        width: 75%;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 3%;
+    }
+    .subtítulo-motivacion{
+        font-size: 30px;
+    }
+    .parrafo-motivacion{
+        font-size: 21px;
+    }
+    .planes-inicio{
+        padding-top: 8px;
+        padding-bottom: 40px;
+        a{
+            input{
+                height: 50px;
+                width: 130px;
+                font-size: 16px;
+            }
+        }
+    }
+
+    /* Pagina N°2 */
+
+    .descripcion-servicio{
+        h1{
+            font-size: 40px;
+        }
+        p{
+            font-size: 22px;
+        }
+    }
+
+    .equipo-trabajo{
+        h2{
+            font-size: 35px;
+        }
+    }
+    .article-cards{
+        width: 40%;
+        flex-direction: column;
+    }
+    .image-profesional{
+        width: 210px;
+        height: 210px;
+        margin-top: 10px;
+    }
+    .cards-profesionales{
+        width: 100%;
+        height: 25rem;
+    }
+    .texto-articulo{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+    .parrafo-nombre-2{
+        font-size: 20px;
+    }
+    .info-profesional{
+        font-size: 16px;
+    }
+    .logros-empresa{
+        h3{
+            font-size: 30px;
+        }
+    }
+    .contenedor-logros-horizontal{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .div-logros{
+        h4{
+            font-size: 20px;
+        }
+    }
+
+    /* Pagina N°3 */
+
+    .título-planes{
+        h1{
+            font-size: 250%;
+        }
+    }
+    .diferentes-planes{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+        article{
+            width: 50%;
+            height: 575px;
+            grid-template-rows: 70px 130px 235px 140px;
+        }
+    }
+    .subtítulo-plan{
+        padding-top: 4%;
+        padding-bottom: 4%;
+        grid-row: 1 / 2;
+    }
+    .descripcion-plan{
+        width: 100%;
+        height: 100%;
+        padding-right: 3%;
+        padding-left: 3%;
+        grid-row: 2 / 3;
+    }
+    .contenido-plan{
+        grid-row: 3 / 4;
+        height: 100%;
+    }
+    .precio-plan{
+        padding-top: 4%;
+        height: 100%;
+        grid-row: 4 / 5;
+        input{
+            width: 150px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 18px;
+        }
+    }
+    .dudas-contacto{
+        h3{
+            font-size: 27px;
+        }
+        a{
+            font-size: 27px;
+        }
+    }
+
+    /* Pagina N°4 */
+
+    .hero-blog{
+        grid-template-rows: repeat(3, 1fr) 1030px;
+    }
+    .título-blog{
+        font-size: 22px;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    .testimonios{
+        article{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            width: 62%;
+            gap: 20px;
+        }
+    }
+    .parrafo-nombre{
+        font-size: 30px;
+        text-align: center;
+    }
+    .parrafo-testimonio{
+        font-size: 20px;
+        padding-right: 3%;
+        padding-left: 2%;
+    }
+    aside{
+        height: 100%;
+        padding: 0.5% 0.5% 0.5% 0.5%;
+        @include grid(repeat(3, 1fr), repeat(2, 1fr));
+        align-items: center;
+        justify-items: center;
+        gap: 0px;
+    }
+    .carrusel-tablet{
+        padding: 0% 0% 0% 0%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+    .publicidad{
+        justify-content: center;
+        align-items: center;
+        width: 18rem;
+        img{
+            height: 80px;
+            width: 80px;
+        }
+    }
+    
+    /* Pagina N°5 */
+
+    .título-contactos{
+        h1{
+            font-size: 26px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        padding-top: 3%;
+        padding-left: 8%;
+        padding-right: 8%;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .formulario{
+        form{
+            fieldset{
+                gap: 3px;
+                div{
+                    flex-direction: column;
+                    gap: 3px;
+                }
+            }
+        }
+    }
+    .espacios{
+        width: 530px;
+    }
+    .espacio-mensajes{
+        width: 530px;
+    }
+    .boton-form{
+        margin: 2% 0% 1% 0%;
+    }
+    .whatsapp{
+        padding-bottom: 4%;
+        gap: 16px;
+        h3{
+            font-size: 22px;
+        }
+    }
+}
+

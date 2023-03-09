@@ -1,0 +1,83 @@
+.descripcion-servicio{
+    color: $text-color;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    padding-left: 6%;
+    padding-right: 6%;
+    @include flex(column, center, center);
+    h1{
+        font-size: 50px;
+        font-weight: 600;
+        padding-bottom: 1.5%;
+        text-align: center;
+    }
+    p{
+        font-size: 32px;
+        text-align: justify;
+    }
+}
+
+.equipo-trabajo{
+    @include flex(column, center, center);
+    h2{
+        color: $color-pr;
+        font-size: 40px;
+        font-weight: 600;
+        padding-bottom: 2.5%;
+    }
+}
+
+.article-cards{
+    @include flex(row, center, center, 30px);
+}
+.cards-profesionales{
+    width: 30%;
+    height: 37.5rem;
+    background-color: $bg-color-3;
+    padding-top: 2rem;
+    @include flex(column, center, center);
+}
+.texto-articulo{
+    padding-left: 2%;
+    padding-right: 2%;
+    text-align: center;
+    @include flex(column, center, center);
+}
+.parrafo-nombre-2{
+    padding-top: 3%;
+    padding-bottom: 3.5%;
+    font-size: 26px;
+    font-weight: 600;
+    p{
+        margin-bottom: 1px;
+    }
+}
+.info-profesional{
+    font-size: 22px;
+    padding: 0% 5% 3% 5%;
+}
+.logros-empresa{
+    padding-top: 4%;
+    @include flex(column, center, center);
+    h3{
+        text-align: center;
+        color: $text-color;
+        font-size: 35px;
+        font-weight: 600;
+        padding-bottom: 3.5%;
+    }
+}
+
+.contenedor-logros-horizontal{
+    padding-bottom: 6%;
+    @include flex(row, center, center, 100px);
+}
+.div-logros{
+    @include flex(column, center, center);
+    h4{
+        color: $text-color;
+        font-size: 20px;
+        font-weight: 600;
+        text-align: center;
+    }
+}

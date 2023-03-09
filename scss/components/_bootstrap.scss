@@ -1,0 +1,50 @@
+// Modificaciones para elementos bootstrap
+
+// clases aplicadas sobre header y nav-bar
+
+.img-logo{
+    width: 400px;
+    height: 100px;
+    padding-left: 10%;
+}
+.nav-item-pr{
+    color: $color-pr;
+    font-weight: 600;
+    &:hover{
+        color: $text-color;
+    }
+}
+
+// clases aplicadas sobre el carrusel del index
+
+.posicion-carrusel{
+    order: -1;
+    grid-row: 1 / 4;
+    grid-column: 1 / 6;
+}
+
+// clases aplicadas sobre el carrusel del blog
+
+.publicidad{
+    border-color: $color-pr;
+    @include flex(column, center, center);
+    &:hover{
+        box-shadow: 3px 3px 18px $color-pr;
+    }
+}
+.boton-compra{
+    color: $text-color;
+    background-color: $bg-color-1;
+    border-color: $color-pr;
+    font-weight: 500;
+    &:hover{
+        color: $color-pr;
+        background-color: $bg-color-1;
+        border-color: $color-pr;
+    }
+}
+.img-mancuernas{
+    width: 286px;
+    height: 286px;
+}
+
